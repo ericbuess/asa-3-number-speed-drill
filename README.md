@@ -23,6 +23,22 @@ sticker.
 
 ## Running
 
+### On an iPad Mini (recommended)
+
+After this branch is pushed, GitHub Actions builds and deploys the site to
+GitHub Pages automatically:
+
+**→ https://ericbuess.github.io/asa-3-number-speed-drill/**
+
+Open the URL in iPad Mini Safari in **landscape**. For a full-screen feel,
+tap the "Aa" address-bar menu → **Hide Toolbar**, or **Add to Home Screen**.
+The canvas accepts Apple Pencil input directly — no app install needed.
+
+> One-time setup by the repo owner: **Settings → Pages → Source = "GitHub
+> Actions"**. After the first green run, the Pages URL above starts serving.
+
+### Locally
+
 ```sh
 npm install
 npm run dev       # http://localhost:5173
@@ -30,10 +46,6 @@ npm run build     # static bundle in dist/
 npm run preview   # serve the built bundle
 npm run typecheck
 ```
-
-Best viewed in landscape on an iPad Mini (or a desktop browser sized similarly).
-Writing digits with an Apple Pencil is the intended input; mouse works in
-development.
 
 ## Persistence
 
