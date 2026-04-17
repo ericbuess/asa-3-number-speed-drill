@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #06060c;
+  font-family: 'VT323', monospace;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(184, 61, 255, 0.15), transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(76, 241, 255, 0.12), transparent 50%),
+    linear-gradient(180deg, #06060c 0%, #0d0820 100%);
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+}
+
+* { box-sizing: border-box; }
+button { font-family: inherit; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%      { opacity: 1;   transform: scale(1.1); }
+}
+@keyframes blink {
+  0%, 50%  { opacity: 1; }
+  51%,100% { opacity: 0.3; }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.08); }
+}
+@keyframes shake {
+  0%, 100%               { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+@keyframes correctPulse {
+  0%   { background: rgba(60, 230, 122, 0); }
+  30%  { background: rgba(60, 230, 122, 0.4); }
+  100% { background: rgba(60, 230, 122, 0.2); }
+}
+@keyframes bounce {
+  0%   { transform: scale(0.3); opacity: 0; }
+  60%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes particle0 { to { transform: translate(-120px, -80px) scale(0); opacity: 0; } }
+@keyframes particle1 { to { transform: translate( 120px, -90px) scale(0); opacity: 0; } }
+@keyframes particle2 { to { transform: translate(-100px,  100px) scale(0); opacity: 0; } }
+@keyframes particle3 { to { transform: translate( 110px,   90px) scale(0); opacity: 0; } }
